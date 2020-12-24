@@ -31,7 +31,7 @@ doc8
         "--ignore D001",
         "--ignore D004",
         "--ignore D002",
-        "--ignore WUMBO002"
+        "--ignore ONYD002"
     ],
 ```
 to your `settings.json` file.

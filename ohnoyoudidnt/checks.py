@@ -89,8 +89,8 @@ class CheckFilenames(ContentCheck):
     - make sure directory names are valid
     """
 
-    FILE_CODE = "WUMBO001"
-    DIR_CODE = "WUMBO002"
+    FILE_CODE = "ONYD001"
+    DIR_CODE = "ONYD002"
     REPORTS = frozenset([FILE_CODE, DIR_CODE])
 
     _FILENAME_REGEX = re.compile(r"[a-z0-9]([a-z0-9]|-[a-z0-9])+")
@@ -113,7 +113,7 @@ class CheckTermSpellings(ContentCheck):
     - make sure terms are spelled correctly
     """
 
-    CODE = "WUMBO003"
+    CODE = "ONYD003"
     REPORTS = frozenset([CODE])
 
     SPELLINGS = [
@@ -156,8 +156,8 @@ class CheckHeadingUnderscores(ContentCheck):
     - make sure heading underline length is correct
     """
 
-    HEADING_CODE = "WUMBO004"
-    LEN_CODE = "WUMBO005"
+    HEADING_CODE = "ONYD004"
+    LEN_CODE = "ONYD005"
     REPORTS = frozenset([HEADING_CODE, LEN_CODE])
 
     NEXT_POSSIBLE_HEADINGS = {
@@ -195,7 +195,7 @@ class CheckDoubleNewlines(ContentCheck):
     - make sure there are no double new lines
     """
 
-    CODE = "WUMBO006"
+    CODE = "ONYD006"
     REPORTS = frozenset([CODE])
 
     def report_iter(self, parsed_file: ParsedFile):
@@ -211,7 +211,7 @@ class CheckTrademarks(ContentCheck):
     - make sure the first instance of terms are trademarked
     """
 
-    CODE = "WUMBO007"
+    CODE = "ONYD007"
     REPORTS = frozenset([CODE])
 
     TRADEMARKEES = [
@@ -256,7 +256,7 @@ class CheckFIRSTItalicized(ContentCheck):
     - make sure FIRST is italicized
     """
 
-    CODE = "WUMBO008"
+    CODE = "ONYD008"
     REPORTS = frozenset([CODE])
 
     plain_pattern = re.compile(r"FIRST")
@@ -281,7 +281,7 @@ class CheckBlankLineAfterHeader(ContentCheck):
     - make sure headers are followed by a blank line
     """
 
-    CODE = "WUMBO009"
+    CODE = "ONYD009"
     REPORTS = frozenset([CODE])
 
     def report_iter(self, parsed_file: ParsedFile):
@@ -302,7 +302,7 @@ class CheckBlankLineAfterDirective(ContentCheck):
     - make sure directives without options are followed by a blank line
     """
 
-    CODE = "WUMBO010"
+    CODE = "ONYD010"
     REPORTS = frozenset([CODE])
 
     REGEX = re.compile(r"^\.\. [A-Za-z0-9-]+::")
@@ -329,7 +329,7 @@ class CheckIndentation(ContentCheck):
     - indentation
     """
 
-    CODE = "WUMBO011"
+    CODE = "ONYD011"
     REPORTS = frozenset([CODE])
 
     def report_iter(self, parsed_file: ParsedFile):
@@ -384,7 +384,7 @@ class CheckInteriorSpaces(ContentCheck):
     - make sure sentences only have 1 space separating them
     """
 
-    CODE = "WUMBO012"
+    CODE = "ONYD012"
     REPORTS = frozenset([CODE])
 
     REGEX = re.compile(r".  [A-Za-z0-9]")
@@ -407,7 +407,7 @@ class CheckImageAlt(ContentCheck):
     - make sure all images have alt text
     """
 
-    CODE = "WUMBO013"
+    CODE = "ONYD013"
     REPORTS = frozenset([CODE])
 
     def report_iter(self, parsed_file: ParsedFile):
@@ -436,7 +436,7 @@ class CheckSingleLineParagraph(ContentCheck):
     - make sure all paragraphs are on a single line
     """
 
-    CODE = "WUMBO014"
+    CODE = "ONYD014"
     REPORTS = frozenset([CODE])
 
     def report_iter(self, parsed_file: ParsedFile):
