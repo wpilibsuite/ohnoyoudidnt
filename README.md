@@ -1,6 +1,6 @@
-# Lynx
+# ohnoyoudidnt
 
-Lynx is a doc8 sphinx linter intended for use by [frc-docs](https://github.com/wpilibsuite/frc-docs). Its an expansion to the normal doc8 linter with custom checks intended to follow the frc-docs [styleguide](https://docs.wpilib.org/en/stable/docs/contributing/style-guide.html)
+ohnoyoudidnt is a doc8 sphinx linter intended for use by [frc-docs](https://github.com/wpilibsuite/frc-docs). Its an expansion to the normal doc8 linter with custom checks intended to follow the frc-docs [styleguide](https://docs.wpilib.org/en/stable/docs/contributing/style-guide.html)
 
 Project created by [TheTripleV](https://github.com/thetriplev)
 
@@ -9,9 +9,9 @@ Project created by [TheTripleV](https://github.com/thetriplev)
 ### Manual
 
 1. Ensure [doc8](https://pypi.org/project/doc8/) is installed.
-2. Install Lynx
+2. Install ohnoyoudidnt
 ```python
-python -m pip install sphinx-lynx
+python -m pip install ohnoyoudidnt
 ```
 3. Run the linter using
 ```

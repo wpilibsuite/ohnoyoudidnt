@@ -15,20 +15,20 @@ with open("README.md", "r", encoding="utf-8") as readme:
     long_description = readme.read()
 
 setup(
-    name="sphinx-lynx",
+    name="ohnoyoudidnt",
     version="0.1",
     author="Vasista Vovveti",
     author_email="vasistavovveti@gmail.com",
     description="doc8 linter for frc-docs",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/wpilibsuite/sphinx-lynx",
-    packages=["sphinx-lynx"],
+    url="https://github.com/wpilibsuite/ohnoyoudidnt",
+    packages=["ohnoyoudidnt"],
     entry_points={
         "doc8.extension.check": [
-            f"{s.lower()} = sphinx-lynx.checks:{s}"
+            f"{s.lower()} = ohnoyoudidnt.checks:{s}"
             for s in re.findall(
-                r"\nclass (.*?)\(", open("./sphinx-lynx/checks.py", "r").read()
+                r"\nclass (.*?)\(", open("./ohnoyoudidnt/checks.py", "r").read()
             )
         ]
     },
