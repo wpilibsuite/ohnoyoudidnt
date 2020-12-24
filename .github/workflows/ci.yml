@@ -49,7 +49,7 @@ jobs:
       - name: Run Tests
         run: |
           cd tests
-          python -m pytest -vv --headless
+          python -m pytest
 
   pypi-release:
     if: startsWith(github.ref, 'refs/tags/v') && github.repository_owner	== 'wpilibsuite'
