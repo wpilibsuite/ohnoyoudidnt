@@ -1,4 +1,6 @@
 # ohnoyoudidnt
+![ci](https://github.com/wpilibsuite/ohnoyoudidnt/workflows/ci/badge.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ohnoyoudidnt is a doc8 sphinx linter intended for use by [frc-docs](https://github.com/wpilibsuite/frc-docs). Its an expansion to the normal doc8 linter with custom checks intended to follow the frc-docs [styleguide](https://docs.wpilib.org/en/stable/docs/contributing/style-guide.html)
 
