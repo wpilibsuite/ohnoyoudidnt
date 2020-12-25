@@ -16,7 +16,7 @@ with open("README.md", "r", encoding="utf-8") as readme:
 
 setup(
     name="ohnoyoudidnt",
-    version="0.1",
+    version=version,
     author="Vasista Vovveti",
     author_email="vasistavovveti@gmail.com",
     description="doc8 linter for frc-docs",
