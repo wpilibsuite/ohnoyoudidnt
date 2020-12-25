@@ -294,7 +294,7 @@ class CheckBlankLineAfterHeader(ContentCheck):
             line_after_title = lines[line_num] if line_num < len(lines) else False
 
             if line_after_title:
-                yield line_num, self.CODE, "No blank link after heading"
+                yield line_num, self.CODE, "No blank line after heading"
 
 
 class CheckBlankLineAfterDirective(ContentCheck):
